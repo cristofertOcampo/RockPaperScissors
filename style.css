@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+body {
+  color: #fff !important;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 0, 255, 1) 26%,
+    rgba(0, 212, 255, 1) 58%
+  );
+}
+
+.titulo {
+  text-align: center;
+}
+
+.containerGame {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.conte_users {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(225, 230, 231);
+  color: #000000;
+  align-items: center;
+  border: 2px solid rgba(4, 4, 4, 0.274);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+}
+
+.img-User,
+.img-Compu {
+  padding: 30px;
+  width: 140px;
+  border-radius: 50px;
+}
+
+.conte_users .rol,
+.rol_compu,
+.rol_user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-mensajes {
+  width: 100%;
+  height: 4vh;
+}
+
+.conte_compu {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.containerGame h2 {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.text-mensajes {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.img-batalla {
+  padding: 30px;
+  width: 140px;
+  border-radius: 50%;
+}
+
+.conte_compu .button_Paper,
+.button_Stone,
+.button_Scissors {
+  width: 110px;
+  height: 150px;
+  border-radius: 33px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.text-mensajes {
+  margin-bottom: 22px;
+}
+
+.link {
+  padding: 10px 15px;
+  color: #000000;
+  font-size: 22px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  text-decoration: none;
+  transition: 0.5s;
+}
