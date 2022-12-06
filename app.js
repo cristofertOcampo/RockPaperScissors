@@ -28,17 +28,17 @@ function StoneProcess() {
   document.querySelector(".img-User").setAttribute("src", img_Stone);
   if (Random == 1) {
     document.querySelector(".img-Compu").setAttribute("src", img_Stone);
-    message.innerHTML = `<div class="alert alert-success" role="alert">!Tie!</div>`;
+    message.innerHTML = `<div class="alert alert-dark" role="alert">!Tie!</div>`;
   } else if (Random === 2) {
     document.querySelector(".img-Compu").setAttribute("src", img_paper);
     machine = machine + 1;
     Count_Compu.innerHTML = machine;
-    message.innerHTML = `<div class="alert alert-success" role="alert">!Machine Win!</div>`;
+    message.innerHTML = `<div class="alert alert-dark" role="alert">!Machine Win!</div>`;
   } else if (Random === 3) {
     document.querySelector(".img-Compu").setAttribute("src", img_scissor);
     user = user + 1;
     Count_User.innerHTML = user;
-    message.innerHTML = `<div class="alert alert-success" role="alert">!User Win!</div>`;
+    message.innerHTML = `<div class="alert alert-dark" role="alert">!User Win!</div>`;
   }
   Game_Over();
 }
@@ -51,15 +51,15 @@ function PaperProcess() {
     document.querySelector(".img-Compu").setAttribute("src", img_Stone);
     user = user + 1;
     Count_User.innerHTML = user;
-    message.innerHTML = `<div class="alert alert-success" role="alert">!User Win!</div>`;
+    message.innerHTML = `<div class="alert alert-dark" role="alert">!User Win!</div>`;
   } else if (Random === 2) {
     document.querySelector(".img-Compu").setAttribute("src", img_paper);
-    message.innerHTML = `<div class="alert alert-success" role="alert">!Tie!</div>`;
+    message.innerHTML = `<div class="alert alert-dark" role="alert">!Tie!</div>`;
   } else if (Random === 3) {
     document.querySelector(".img-Compu").setAttribute("src", img_scissor);
     machine = machine + 1;
     Count_Compu.innerHTML = machine;
-    message.innerHTML = `<div class="alert alert-success" role="alert">!Machine Win!</div>`;
+    message.innerHTML = `<div class="alert alert-dark" role="alert">!Machine Win!</div>`;
   }
   Game_Over();
 }
@@ -72,27 +72,27 @@ function ScissorsProcess() {
     document.querySelector(".img-Compu").setAttribute("src", img_Stone);
     machine = machine + 1;
     Count_Compu.innerHTML = machine;
-    message.innerHTML = `<div class="alert alert-success" role="alert">!Machine win!</div>`;
+    message.innerHTML = `<div class="alert alert-dark" role="alert">!Machine win!</div>`;
   } else if (Random === 2) {
     document.querySelector(".img-Compu").setAttribute("src", img_paper);
     user = user + 1;
     Count_User.innerHTML = user;
-    message.innerHTML = `<div class="alert alert-success" role="alert">!User Win!</div>`;
+    message.innerHTML = `<div class="alert alert-dark" role="alert">!User Win!</div>`;
   } else if (Random === 3) {
     document.querySelector(".img-Compu").setAttribute("src", img_scissor);
-    message.innerHTML = `<div class="alert alert-success" role="alert">!Tie!</div>`;
+    message.innerHTML = `<div class="alert alert-dark" role="alert">!Tie!</div>`;
   }
   Game_Over();
 }
 
 function Game_Over() {
   if (machine == 3) {
-    message.innerHTML = `<div class="alert alert-success" role="alert">!The machine won you!</div>
+    message.innerHTML = `<div class="alert alert-dark" role="alert">!The machine won you!</div>
         <a href="index.html" class="link">Play Again</a>`;
     contenedor.style.display = "none";
     Choose.style.display = "none";
   } else if (user == 3) {
-    message.innerHTML = `<div class="alert alert-success" role="alert">!You Won!</div>
+    message.innerHTML = `<div class="alert alert-dark" role="alert">!You Won!</div>
         <a href="index.html" class="link">Play Again</a>`;
     contenedor.style.display = "none";
     Choose.style.display = "none";
